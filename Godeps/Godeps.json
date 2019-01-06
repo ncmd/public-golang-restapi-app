@@ -1,0 +1,9 @@
+{
+	"ImportPath": "public/public-golang-restapi-app",
+	"GoVersion": "go1.11",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": []
+}

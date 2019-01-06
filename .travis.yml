@@ -1,0 +1,15 @@
+language: go
+go:
+- 1.11.x
+go_import_path: "$HOME/go/src/public/public-golang-restapi-app"
+deploy:
+  provider: heroku
+  app: public-go-restapi-prod
+  on:
+    condition: "$TRAVIS_GO_VERSION =~ ^1\\.11"
+    repo: ncmd/public-golang-restapi-app
+    branch: master
+  api_key:
+    secure: PdUlgn/kmTtMCUM3dj/hdm59+gX0E4+UrHm4dqOqYcFxPPTiT1RXw4T7r9JPPGuj1UmaRvWPRGXWT4HxyhRFQhpy5fnJGzkJKkt/IZdLiC988+ybMcvtvN74EgeeZFZVPsONFUIbHXpBmquQZU9KEnvxPzIykgCD/Kv/+sRSj1lfYCujTVwWn0sZnpxDmH71U2G5M61sj1mvesjlN9sZq6xE6m/RybktizsfAO32otTCdl4FoEYF8q3Wq50urotzi0waiqZGnrE8x8OqxgKpbgSMWErYl4TKv4vCFbIl4kmLSRrbfAVRWLeYW3HOA+dhnp3tHatxnGf3un9WiVOQH2Dv/bPwVahJdXiZL5ePtU80W0C/9pnTBfYb8Pfy96D7v58Gc8RHK1KJfNfaTbqJasl6Ad+OOmzMi5ideOYKZcEd4BRowvXaWm9rmb5ixJWpJYRJgV3l8o4Qp1XpBa9XIoExn38tPms4nJIV23BK9DmVfqMhjX6uwB3mVDwRXwy3U3iH9+bHbSCCYcXUlYCHE3hJEdCHu63qmkmAwSt189j5+KT0zuv5IBY2/JQvXWFlt7+6rB03PcuI2YbGu72TL6tdIiK1RrmChhBeFkBXFLbaCmm7GdvhoTvVXhqKIJrN1VONIiW+zYvvqk4rnN5m19xiqqpDwoYHmw04CnqD/UE=
+env:
+  APP_ENV: prod
