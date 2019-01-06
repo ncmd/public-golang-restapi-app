@@ -1,1 +1,1 @@
-web: nervdaq-golang-restapi-app
+web: public-golang-restapi-app
