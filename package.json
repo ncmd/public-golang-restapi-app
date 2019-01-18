@@ -1,0 +1,20 @@
+{
+  "name": "public-golang-restapi-app",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/ncmd/public-golang-restapi-app.svg?branch=master)](https://travis-ci.org/ncmd/public-golang-restapi-app): public-golang-restapi-app",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git add . && git commit -m \"Deploy\" && git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncmd/public-golang-restapi-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncmd/public-golang-restapi-app/issues"
+  },
+  "homepage": "https://github.com/ncmd/public-golang-restapi-app#readme"
+}
