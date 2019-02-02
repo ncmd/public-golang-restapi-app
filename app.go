@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"os"
 	"strings"
+
+	"github.com/BurntSushi/toml"
 )
 
 var sendgridkey = ""
@@ -30,10 +32,10 @@ func main() {
 	}
 
 	// hello world
-	http.HandleFunc("/", helloworld)
+	// http.HandleFunc("/", helloworld)
 
 	// response pong
-	http.HandleFunc("/api/ping", pingpong)
+	// http.HandleFunc("/api/ping", pingpong)
 
 	// SIGNUP - REGISTER
 	http.HandleFunc("/api/signup/register", controller_signup_register_email_address)
