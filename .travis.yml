@@ -5,6 +5,10 @@ go_import_path: "$HOME/go/src/public/public-golang-restapi-app"
 before_install:
   - go get github.com/tools/godep
   - go get github.com/gorilla/websocket
+  - go get firebase.google.com/go
+  - go get github.com/sendgrid/sendgrid-go
+  - go get github.com/BurntSushi/toml
+
 deploy:
   provider: heroku
   app: public-go-restapi-prod
