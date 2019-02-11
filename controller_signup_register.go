@@ -43,6 +43,5 @@ func controller_signup_register_email_address(w http.ResponseWriter, r *http.Req
 			fmt.Println("error creating user:", err)
 		}
 		log.Printf("Successfully created user: %v\n", u.UID)
-		fmt.Fprintln(w, "Hello, World!")
 	}
 }
